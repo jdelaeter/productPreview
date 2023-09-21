@@ -1,0 +1,156 @@
+body {
+    height: 100vh;
+    background-color: #F2EAE2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Fraunces', serif;
+    font-size: 15px;
+}
+
+.card {
+    height: 450px;
+    width: 600px;
+    display: flex;
+    background-color: white;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.imgStyle {
+    width: 300px;
+    height: 450px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.rightBloc {
+    width: 300px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.test {
+    height: 220px;
+    background-color: #3D8168;
+}
+
+#header {
+    color: #6C7289;
+    font-family: 'Montserrat', serif;
+    letter-spacing: 5px;
+    font-size: 12px;
+}
+
+#title {
+    color: #1C232B;
+    font-size: 32px;
+    line-height: 32px;
+    font-family: 'fraunces', serif;
+    font-weight: bold;
+}
+
+#textContent {
+    color: #6C7289;
+    font-size: 14px;
+    line-height: 23px;
+    font-family: 'Montserrat', serif;
+}
+
+#buttonText {
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Montserrat', serif;
+}
+
+#priceBloc {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 19px;
+}
+
+#newPrice {
+    font-size: 32px;
+    line-height: 32px;
+    color: #3D8168;
+}
+
+#oldPrice {
+    color: #6C7289;
+    text-decoration: line-through;
+    font-size: 13px;
+    line-height: 32px;
+}
+
+.addB {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    background-color: #3D8168;
+    border-radius: 8px;
+    width: 100%;
+    height: 48px;
+    border: none;
+    font-family: 'Montserrat', serif;
+}
+
+.addB:hover {
+    background-color: #1A4032;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 620px) {
+    body {
+        min-height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        flex-direction: column;
+        width: 343px;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .imgStyle {
+        width: 100%;
+        height: 39vh;
+        border-radius: 10px 10px 0px 0px;
+        object-fit: cover;
+    }
+
+    .rightBloc {
+        width: 100%;
+        height: 61vh;
+        padding: 24px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+        border-radius: 10px;
+    }
+
+    .card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .addB {
+        box-sizing: content-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 48px;
+    }
+
+
+}
